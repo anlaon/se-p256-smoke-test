@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+		A801B537010573430DF3B04B /* SEP256SmokeTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CB175198AD434A35CAF266 /* SEP256SmokeTestApp.swift */; };
+		1EA41CD1D0F380F9EA368CDD /* SEP256SmokeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A6F2B42E411E24FDCA086 /* SEP256SmokeTestTests.swift */; };
+		F056A023A242C6261A555B7C /* CryptoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06D8CE5D9514FAF50DD20E3 /* CryptoKit.framework */; };
+		75512F727FA28138280B1669 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A62B03257034E6485C761B /* Security.framework */; };
+		F4CBD4F05E5BBA9A003A97DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 956F5B8F74E01DD0271D9788 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA070719E0699DAF676D408;
+			remoteInfo = SEP256SmokeTest;
+		};
+		07EAE4538C1EBE038346B04D /* SEP256SmokeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEP256SmokeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CDCD7AFFF0FE6F14956825 /* SEP256SmokeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SEP256SmokeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54CB175198AD434A35CAF266 /* SEP256SmokeTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEP256SmokeTestApp.swift; sourceTree = "<group>"; };
+		168A6F2B42E411E24FDCA086 /* SEP256SmokeTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEP256SmokeTestTests.swift; sourceTree = "<group>"; };
+		F06D8CE5D9514FAF50DD20E3 /* CryptoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoKit.framework; path = System/Library/Frameworks/CryptoKit.framework; sourceTree = SDKROOT; };
+		51A62B03257034E6485C761B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F958988E615EF593BD8733B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A0EA68E84C8200363C9F80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F056A023A242C6261A555B7C /* CryptoKit.framework in Frameworks */,
+				75512F727FA28138280B1669 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1412943FD0FE40EDD1FF28F9 /* SEP256SmokeTest */ = {
+			isa = PBXGroup;
+			children = (
+				599C03F14BDB801370A57377 /* SEP256SmokeTest */,
+				FF4320E291F68F1EE145D1CA /* SEP256SmokeTestTests */,
+				09C58B7302EDA1DA079F4969 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		599C03F14BDB801370A57377 /* SEP256SmokeTest */ = {
+			isa = PBXGroup;
+			children = (
+				54CB175198AD434A35CAF266 /* SEP256SmokeTestApp.swift */,
+			);
+			path = SEP256SmokeTest;
+			sourceTree = "<group>";
+		};
+		FF4320E291F68F1EE145D1CA /* SEP256SmokeTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				168A6F2B42E411E24FDCA086 /* SEP256SmokeTestTests.swift */,
+			);
+			path = SEP256SmokeTestTests;
+			sourceTree = "<group>";
+		};
+		09C58B7302EDA1DA079F4969 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07EAE4538C1EBE038346B04D /* SEP256SmokeTest.app */,
+				E4CDCD7AFFF0FE6F14956825 /* SEP256SmokeTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCA070719E0699DAF676D408 /* SEP256SmokeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE5BF0840D8D833B33F75AA5 /* Build configuration list for PBXNativeTarget "SEP256SmokeTest" */;
+			buildPhases = (
+				A09CA9FD729836986C828A36 /* Sources */,
+				F958988E615EF593BD8733B8 /* Frameworks */,
+				B35D228BD05822A108A199BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SEP256SmokeTest;
+			productName = SEP256SmokeTest;
+			productReference = 07EAE4538C1EBE038346B04D /* SEP256SmokeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A935860D84F95B35294835B /* SEP256SmokeTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD66E3FBA6652A412F6F5223 /* Build configuration list for PBXNativeTarget "SEP256SmokeTestTests" */;
+			buildPhases = (
+				7C98A71C1792E85309A4C773 /* Sources */,
+				2A0EA68E84C8200363C9F80C /* Frameworks */,
+				1F1C7901F93C2870E4F22C3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB22270599D1FFD4E9630F4D /* PBXTargetDependency */,
+			);
+			name = SEP256SmokeTestTests;
+			productName = SEP256SmokeTestTests;
+			productReference = E4CDCD7AFFF0FE6F14956825 /* SEP256SmokeTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		956F5B8F74E01DD0271D9788 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					5A935860D84F95B35294835B = {
+						TestTargetID = CCA070719E0699DAF676D408;
+					};
+				};
+			};
+			buildConfigurationList = C379475AD854BAD1A9820E4D /* Build configuration list for PBXProject "SEP256SmokeTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1412943FD0FE40EDD1FF28F9;
+			productRefGroup = 09C58B7302EDA1DA079F4969 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCA070719E0699DAF676D408 /* SEP256SmokeTest */,
+				5A935860D84F95B35294835B /* SEP256SmokeTestTests */,
+			);
+		};
+		B35D228BD05822A108A199BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F1C7901F93C2870E4F22C3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09CA9FD729836986C828A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A801B537010573430DF3B04B /* SEP256SmokeTestApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C98A71C1792E85309A4C773 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA41CD1D0F380F9EA368CDD /* SEP256SmokeTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB22270599D1FFD4E9630F4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA070719E0699DAF676D408 /* SEP256SmokeTest */;
+			targetProxy = F4CBD4F05E5BBA9A003A97DA /* PBXContainerItemProxy */;
+		};
+		4F319074B987AF7778981010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFS_STRING = en;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+				"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E345DDC2CB2B8EDDB0855A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFS_STRING = en;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C1DC183B00D70B9AC66EF0B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SEP256SmokeTest;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+				"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.sep256smoketest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMBED_LIBRARIES_WITH_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		892EC28E66EDC9B33CC8D439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SEP256SmokeTest;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+				"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.sep256smoketest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMBED_LIBRARIES_WITH_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A61D3811E9FE6C8E4696056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SEP256SmokeTest.app/SEP256SmokeTest";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SEP256SmokeTestTests;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+				"@executable_path/Frameworks",
+				"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.sep256smoketest.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		B722B2AEFB05C1F69FF5FE3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SEP256SmokeTest.app/SEP256SmokeTest";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SEP256SmokeTestTests;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+				"@executable_path/Frameworks",
+				"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.sep256smoketest.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		C379475AD854BAD1A9820E4D /* Build configuration list for PBXProject "SEP256SmokeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F319074B987AF7778981010 /* Debug */,
+				4E345DDC2CB2B8EDDB0855A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE5BF0840D8D833B33F75AA5 /* Build configuration list for PBXNativeTarget "SEP256SmokeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DC183B00D70B9AC66EF0B0 /* Debug */,
+				892EC28E66EDC9B33CC8D439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD66E3FBA6652A412F6F5223 /* Build configuration list for PBXNativeTarget "SEP256SmokeTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A61D3811E9FE6C8E4696056 /* Debug */,
+				B722B2AEFB05C1F69FF5FE3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+	};
+	rootObject = 956F5B8F74E01DD0271D9788 /* Project object */;
+}

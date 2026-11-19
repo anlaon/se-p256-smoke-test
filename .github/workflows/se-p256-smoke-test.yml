@@ -1,0 +1,66 @@
+# Secure Enclave P-256 smoke test (iOS Simulator)
+#
+# SIMULATOR ONLY — Secure Enclave is simulated, NOT real hardware.
+# This verifies the Swift / CryptoKit code compiles and its logic runs.
+# It does NOT prove the real Secure Enclave on a physical iPhone works.
+# A real-hardware test on a physical iPhone is a separate step:
+# it needs a Mac + a physical iPhone.
+#
+# This Simulator run is only a code-correctness check.
+
+name: Secure Enclave P-256 smoke test (iOS Simulator)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'SEP256SmokeTest/**'
+      - '.github/workflows/se-p256-smoke-test.yml'
+  pull_request:
+    paths:
+      - 'SEP256SmokeTest/**'
+      - '.github/workflows/se-p256-smoke-test.yml'
+  workflow_dispatch:
+
+jobs:
+  se-p256-smoke-test:
+    name: Secure Enclave P-256 smoke test (iOS Simulator)
+    runs-on: macos-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: |
+          ls /Applications | grep -i '^Xcode' || true
+          if [ -d /Applications/Xcode_16.2.app ]; then
+            sudo xcode-select -s /Applications/Xcode_16.2.app
+          else
+            sudo xcode-select -s /Applications/Xcode.app
+          fi
+          xcodebuild -version
+          xcrun simctl list runtimes
+
+      - name: List available simulators
+        run: xcrun simctl list devices available
+
+      - name: Build and test on iPhone Simulator
+        run: |
+          set -o pipefail
+          cd SEP256SmokeTest
+          xcodebuild test \
+            -project SEP256SmokeTest.xcodeproj \
+            -scheme SEP256SmokeTest \
+            -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
+            -configuration Debug \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            | tee xcodebuild-test.log
+
+      - name: Show SE-TEST result lines
+        if: always()
+        run: |
+          cd SEP256SmokeTest
+          echo '--- SE-TEST result lines ---'
+          grep -E 'SE-TEST:|TEST (SUCCEEDED|FAILED)|error:' xcodebuild-test.log || echo '(no matching lines found in log)'
