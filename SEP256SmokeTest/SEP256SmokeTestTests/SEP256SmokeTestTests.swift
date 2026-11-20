@@ -32,7 +32,9 @@ final class SEP256SmokeTestTests: XCTestCase {
         XCTAssertEqual(
             signature.rawRepresentation.count, 64,
             "P-256 ECDSA signature must be 64-byte raw r||s")
-        try key.publicKey.verify(signature, for: message)
+        XCTAssertTrue(
+            key.publicKey.isValidSignature(signature, for: message),
+            "Public key must verify the signature over the test message")
 
         let pub = key.publicKey.x963Representation
         XCTAssertEqual(pub.count, 65, "Public key must be 65-byte x963")
